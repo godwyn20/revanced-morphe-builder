@@ -1,8 +1,8 @@
 YT-Music-Morphe: 9.15.51  
 YouTube-Morphe: 21.07.247  
 
-Install [ReVanced GmsCore](https://github.com/ReVanced/GmsCore/releases/latest) or [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) for non-root YouTube and YouTube Music APKs  
-(Optional) Use [zygisk-detach](https://github.com/j-hc/zygisk-detach/releases/latest) to detach YouTube and YouTube Music modules from the Play Store
+Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) for YouTube and YouTube Music APKs  
+Use [Pothelper](https://github.com/MorpheApp/PotHelper/releases) for instant start playback and no spoofing side effects. 
   
 Patches: MorpheApp/patches-1.41.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.41.0)
