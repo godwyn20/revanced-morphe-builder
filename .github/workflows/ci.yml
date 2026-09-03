@@ -60,7 +60,7 @@ jobs:
         run: |
           gh run list -L400 --json databaseId -q '.[].databaseId' | tail -n+10 | xargs -IID gh api "repos/$GITHUB_REPOSITORY/actions/runs/ID" -X DELETE || :
 
-   build:
+  build:
     permissions: write-all
     needs: check
     if: ${{ needs.check.outputs.SHOULD_BUILD == '1' || github.event_name == 'workflow_dispatch' }}
