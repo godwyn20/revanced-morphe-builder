@@ -26,6 +26,8 @@ build-mode = "apk"
 [Brave]
 app-name = "Brave"
 direct-dlurl = "https://github.com/brave/brave-browser/releases/download/v1.94.119/BraveMonoarm64.apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
 patches-source = "kveld9/kveld-morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
+arch = "arm64-v8a"
 build-mode = "apk"
