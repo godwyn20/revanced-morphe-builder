@@ -10,3 +10,7 @@ Patches: kveld9/patches-1.11.0.mpp
 CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
 Patches: MorpheApp/patches-1.41.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.41.0)  
+
+Skipped:  
+Patches: kveld9/patches-1.11.0.mpp  
+Patches: MorpheApp/patches-1.41.0.mpp    
