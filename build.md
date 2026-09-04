@@ -1,3 +1,4 @@
+Brave: 1.94.119  
 YT-Music-Morphe: 9.15.51  
 YouTube-Morphe: 21.07.247  
 
@@ -13,4 +14,4 @@ Patches: MorpheApp/patches-1.41.0.mpp
 
 Skipped:  
 Patches: godwyn20/patches-1.0.2.mpp  
-Patches: MorpheApp/patches-1.41.0.mpp      
+Patches: MorpheApp/patches-1.41.0.mpp    
