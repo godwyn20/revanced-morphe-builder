@@ -25,9 +25,20 @@ build-mode = "apk"
 
 [Brave]
 app-name = "Brave"
-direct-dlurl = "https://github.com/godwyn20/YTYTM-APK/releases/download/1.94.119/com.brave.browser-1.94.119-arm64-v8a.apk"
+direct-dlurl = "https://github.com/godwyn20/YTYTM-APK/releases/download/1.94.121/com.brave.browser-1.94.121-arm64-v8a.apk"
 patches-source = "godwyn20/kveld-morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
+arch = "arm64-v8a"
+build-mode = "apk"
+
+[Gboard]
+app-name = "Gboard"
+direct-dlurl = "https://github.com/godwyn20/YTYTM-APK/releases/download/18.1.3.962075747/com.google.android.inputmethod.latin_18.1.3.962075747-lite_beta-arm64-v8a-175963042_minAPI27.arm64-v8a.nodpi._apkmirror.com.apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/"
+patches-source = "godwyn20/kveld-morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+version = "18.1.3.962075747-lite_beta-arm64-v8a"
 arch = "arm64-v8a"
 build-mode = "apk"
