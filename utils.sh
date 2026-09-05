@@ -557,7 +557,9 @@ get_archive_pkg_name() { echo "$__ARCHIVE_PKG_NAME__"; }
 # -------------------- direct --------------------
 dl_direct() {
 	local url=$1 version=${2// /-} output=$3 arch=$4 _dpi=$5
-	if ! grep -q "${version_f#v}-${arch// /}" <<<"$url"; then
+	local check_str="${version_f#v}"
+	if [[ "$check_str" != *"${arch// /}" ]]; then check_str+="-${arch// /}"; fi
+	if ! grep -q "$check_str" <<<"$url"; then
 		epr "Given direct-dlurl for $output is not compatible. Set proper 'arch' and 'version' options."
 		return 1
 	fi
@@ -682,7 +684,12 @@ build_rv() {
 	pr "Choosing version '${version}' for ${table}"
 	local version_f=${version// /}
 	version_f=${version_f#v}
-	local stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
+	local stock_apk
+	if [[ "$version_f" == *"$arch_f" ]]; then
+		stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}.apk"
+	else
+		stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
+	fi
 	if [ ! -f "$stock_apk" ]; then
 		for dl_p in "${DL_SRCS[@]}"; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
